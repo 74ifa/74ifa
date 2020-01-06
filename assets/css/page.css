@@ -1,0 +1,19 @@
+.page-header-pages {
+  min-height: 70vh;
+  max-height: 999px;
+  height: 50vh;
+}
+
+.index-page .page-header {
+  height: 50vh;
+}
+
+.page{
+margin-right: 400px;
+}
+
+
+p, h4 {
+text-align: center;
+
+}

@@ -85,6 +85,11 @@ html {
   width: device-width;
 }
 
+
+.marg-t7 {
+  margin-top: 7px;
+}
+
 article,
 aside,
 figcaption,
@@ -17638,7 +17643,6 @@ hr.line-deafult {
   z-index: 2;
   position: relative;
 }
-
 .page-header {
   min-height: 100vh;
   max-height: 999px;

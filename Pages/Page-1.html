@@ -7,7 +7,7 @@
   <link rel="apple-touch-icon" sizes="76x76" href="./../assets/img/apple-icon.png">
   <link rel="icon" type="image/png" href="./../assets/img/favicon.png">
   <title>
-    74ifa Codes
+    كود لاستبدال الاحرف العربية بالانجليزية
   </title>
   <!--     Fonts and icons     -->
   <link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet">
@@ -98,144 +98,93 @@
       <div class="content-center">
           <div class="row justify-content-center">
             <div class="col-lg-12 col-md-12">
-              <h2 class="title">ِكيف تجعل الحاسوب يدخل في وضع الخمول بعد مدة محددة في بايثون</h2>
+              <!--  #1   -->
+              <h2 class="title">ِ كود لاستبدال الاحرف العربية بالانجليزية </h2>
             </div>
-              <h4 dir="ltr" class="text-danger">#time, #python</h4>
+            <!--  #2   -->
+              <h4 dir="ltr" class="text-danger">#Python</h4>
           </div>
         </div>
 
     </div>
 
     <div>
-    <div class="row justify-content-center">
-        <div class="col-lg-10  col-sm-10 blockquote blockquote-primary" dir="rtl">
-          <p>
-            بايثون هي لغة برمجة مجانية مفتوحة المصدر،متعددة المنصات و من ميزاتها أنها سهلة التعلم المجتمع يناقبايثون هي لغة برمجة مجانية مفتوحة المصدر،متعددة المنصات و من ميزاتها أنها سهلة التعلم المجتمع يناقش بايثون هي لغة برمجة مجانية مفتوحة المصدر،متعددة المنصات و من ميزاتها أنها سهلة التعلم المجتمع يناقش
-
-
+    <div class="row justify-content-center col-sm-10 col-lg-12">
+        <div class="col-lg-10 col-sm-8 blockquote blockquote-primary bg">
+          <p class="bg">
+            <!--  #3   -->
+            ملاحضة : هذا الشرح للمبدئين فقط اذا انت متقدم ماينسبك 
           </p>
           <p class="">
-            بايثون هي لغة برمجة مجانية مفتوحة المصدر،متعددة المنصات و من ميزاتها أنها سهلة التعلم المجتمع يناقش
+            الكود بسيط ويسوي استبدال للاحرف فقط 
+لاكن حبيت اشرحة واعطيكم فكره ايش اللي يصير 
           </p>
           <p >
-            بايثون هي لغة برمجة مجانية مفتوحة المصدر،متعددة المنصات و من ميزاتها أنها سهلة التعلم المجتمع يناقش
+            اول شي سويت Function بحتوي على برميتر بــ اسم in_English لكي استطيع اعطاءة قيمة بعد ماسوي الكود بمعنى تقدر تسويله اي كلمه بعد ماتخلص كتابة الكود
           </p>
+          <!--  #Codes  -->
+          <div class="col-lg-9 col-sm-10">
+            <p class="text-success left-align" dir="ltr">def ar(in_English) :</p>
+          </div>
+          
           <p class="">
-            بايثون هي لغة برمجة مجانية مفتوحة المصدر،متعددة المنصات و من ميزاتها أنها سهلة التعلم المجتمع يناقش
+            بعدين سويت متغير يحتوي على List من نوع Dictionary
+            تحتوي على ٣١ مفتاح Keys وقيم             
           </p>
-          <h4>            بايثون هي لغة ب من ميزاتها أنها سهلة التعلم المجتمع يناقش
-            </h4>
+          <div>
+            <p><span class="text-warning">المفاتيح هي :</span> الحروف العربية</p>
+            <p><span class="text-warning">القيم هي: </span>الحروف الانجليزية المشابة للحروف العربية</p>
+          </div>
+          <p>سويت متغير بــ اسم Val عشان يعطيني القيم بدون المفاتيح</p>
+          <div class="col-lg-4 col-sm-10">
+            <p class="text-success left-align" dir="ltr">val = Arabic.values()</p>
+          </div>
+          <p>سويت متغير بــ اسم enlist يحتوي على in_English ورح يفصل كل حرف على شكل لسته</p>
+          <div class="col-lg-4 col-sm-10">
+            <p class="text-success left-align" dir="ltr">enlist = list(in_English)</p>
+          </div>
+          <p><span dir="ltr" class="text-success">: list() </span>  هو متغير يفصل الكلمات الى احرف ويخزن كل حرف في لسته</p>
+          <p>وسويت متغير ListEnglish يحتوي على list  فارغة</p>
+          <p>الـ for لفصل كل الاحرف من الList وتخزينها في القائمة الفارغة  ListEnglish</p>
+          <div class="col-lg-4 col-sm-10">
+            <p class="text-success left-align" dir="ltr">for x in enlist:</p>
+            <p class="text-success left-align" dir="ltr"><span class="text-muted">___</span class="text-primary"> d = Arabic.get('{}'.format(x))</p>
+            <p class="text-success left-align" dir="ltr"><span class="text-muted">___</span> ListEnglish.extend(d)</p>
+          </div>
+          <p>قيمة الـ x في كل دورة تأخذ قيم ال enlist المأخوذة من الادخال in_English </p>
+          <p>بعدها
+            <span dir="ltr">d = arabic.get(x) </span>
+             تبحث عن هذا الحرف في الArabic وتعطي القيمة اللي هي الحرف الانجليزي اللي مفروض يكون شبيه الحرف العربي
+          </p>
+          <p>{}.format(x)</p>
+          <p>تقدر تستبدلها ب x فقط لاكن انا سويتها كذا فقط لتجنب الاخطاء في برنامجي قبل</p>
+          <div class="col-lg-4 col-sm-10">
+            <p class="text-success left-align" dir="ltr">joinLetter = ''.join(ListEnglish)</p>
+          </div>
+          <p>لتجميع الاحرف من ListEnglish</p>
+          <p>وعطيته امر الطباعة</p>
+          <img class="d-block w-100 col-lg-6" src="../assets/img/pic1.PNG" alt="First slide">
+
+          <p>واخيرا استدعيت الFunction وعطيته قيمة اسمها القيمة وووووووووبس</p>
         </div>
+
+        <div >
+          <p class="text-center">ان شاء الله شرحي تمام التمام ومافي اي اخطاء واستفدتوا </p>
+          <p class="text-center">__</p>
+          <button class="btn btn-warning" data-toggle="modal" data-target="#myModal2">
+            الكود على Github
+          </button>
+          <button class="btn btn-primary" data-toggle="modal" data-target="#myModal2">
+            Launch Modal Form
+          </button>
+        </div>
+
     </div>
 </div>
-
     <div class="main">
       <!--  end notifications -->
       <!-- Typography -->
-      <!-- Sart Modal -->
-      <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header justify-content-center">
-              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
-                <i class="tim-icons icon-simple-remove"></i>
-              </button>
-              <h4 class="title title-up">Modal title</h4>
-            </div>
-            <div class="modal-body">
-              <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.
-              </p>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-default">Nice Button</button>
-              <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!--  End Modal -->
-      <!-- Mini Modal -->
-      <div class="modal fade modal-mini modal-primary modal-mini" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header justify-content-center">
-              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
-                <i class="tim-icons icon-simple-remove text-white"></i>
-              </button>
-              <div class="modal-profile">
-                <i class="tim-icons icon-single-02"></i>
-              </div>
-            </div>
-            <div class="modal-body">
-              <p>Always have an access to your profile</p>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-link btn-neutral">Back</button>
-              <button type="button" class="btn btn-link btn-neutral" data-dismiss="modal">Close</button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- Form Modal -->
-      <div class="modal fade modal-black" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header justify-content-center">
-              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
-                <i class="tim-icons icon-simple-remove text-white"></i>
-              </button>
-              <div class="text-muted text-center ml-auto mr-auto">
-                <h3 class="mb-0">Sign in with</h3>
-              </div>
-            </div>
-            <div class="modal-body">
-              <div class="btn-wrapper text-center">
-                <a href="#" class="btn btn-neutral btn-icon">
-                  <img src="../assets/img/github.svg">
-                </a>
-                <a href="#" class="btn btn-neutral btn-icon">
-                  <img src="../assets/img/google.svg">
-                </a>
-              </div>
-              <div class="text-center text-muted mb-4 mt-3">
-                <small>Or sign in with credentials</small>
-              </div>
-              <form role="form">
-                <div class="form-group mb-3">
-                  <div class="input-group input-group-alternative">
-                    <div class="input-group-prepend">
-                      <span class="input-group-text">
-                        <i class="tim-icons icon-email-85"></i>
-                      </span>
-                    </div>
-                    <input class="form-control" placeholder="Email" type="email">
-                  </div>
-                </div>
-                <div class="form-group">
-                  <div class="input-group input-group-alternative">
-                    <div class="input-group-prepend">
-                      <span class="input-group-text">
-                        <i class="tim-icons icon-key-25"></i>
-                      </span>
-                    </div>
-                    <input class="form-control" placeholder="Password" type="password">
-                  </div>
-                </div>
-                <div class="form-check mt-3">
-                  <label class="form-check-label">
-                    <input class="form-check-input" type="checkbox" checked>
-                    <span class="form-check-sign"></span>
-                    Remember me!
-                  </label>
-                </div>
-                <div class="text-center">
-                  <button type="button" class="btn btn-primary my-4">Sign in</button>
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
-      </div>
+
       <!--  End Modal -->
     </div>
   </div>

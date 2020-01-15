@@ -14,6 +14,14 @@ margin-right: 400px;
 
 
 p, h4 {
-text-align: center;
+  text-align: right;
 
+}
+
+.bg {
+  border-radius: 15px;
+}
+
+.left-align {
+  text-align: left;
 }
